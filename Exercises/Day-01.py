@@ -1,6 +1,0 @@
-print("hii")
-print("hello,I am first.py")
-print("I am updated first.py")
-print("5")
-print(5), print(10*2)
-print("I am updated first.py again")
