@@ -99,7 +99,14 @@ def str_reverse(s):
     for i in range(len(s)-1,-1,-1):
         result.append(s[i])
     return "".join(result)
-print(str_reverse("ComplexityReduced"))
+print(str_reverse("ComplexityReduced")) 
+
+############## Important Insights : 
+
+# str1==str2 , == compares both value & order respectively of each character in both strings 
+# It does not care about how many times a character appears globally, only position matters
+# “same letters regardless of order”
+# sorted("hello")==sorted("lelho")  ==> True
 
 
 
