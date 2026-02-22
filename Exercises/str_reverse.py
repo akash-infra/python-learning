@@ -57,7 +57,49 @@ print(f"Date:{date}")
 print(f"Server:{server}")
 print(f"Message0:{message}")
 
+#************************************** Again practice of reversing a string
 
+# as a beginer i would go with this 
+str="akash"
+reverse=str[-1:-6:-1]
+print(reverse)
+
+#optimizing this:
+def rev_str(s):
+    a=len(s)+1
+    reverse=s[-1:-a:-1]
+    return reverse 
+print(rev_str("churan")) 
+
+# Reverse string without slicing
+
+def reverse_string(s):
+    reverse=""
+    for ch in s:          # We know strings aree iterable
+        reverse=ch+reverse
+    return reverse 
+
+    
+print(reverse_string("KadakPan"))   
+
+## We also know the len,range function in string:
+def r_str(s1):
+ reve_str=""
+ for i in range(len(s1)-1,-1,-1):
+    reve_str =  reve_str +  s1[i]           # String behaves like array
+ return reve_str
+print(r_str("KalaJamuna")) 
+
+# All these give O(n2)  complexity:
+
+# For better solution
+
+def str_reverse(s):
+    result=[]
+    for i in range(len(s)-1,-1,-1):
+        result.append(s[i])
+    return "".join(result)
+print(str_reverse("ComplexityReduced"))
 
 
 
