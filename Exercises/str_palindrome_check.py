@@ -26,7 +26,7 @@ print(is_palindrome("Akash"))
 
 
 
-#********************* palindrome practice again
+#********************* palindrome practice again*************************************
 
 # Check wheather a string is palindrome 
 
