@@ -84,7 +84,19 @@ def no_rep_char(s):
         if dic[ch]==1:
             return ch
     return None
-print(no_rep_char("SSdffgtr"))
+print(no_rep_char("SSdffgtr"))    
+
+# Remove Duplictes from string 
+
+def remove_duplicates(s):
+    seen=set()
+    result=""
+    for ch in s:
+        if ch not in seen:
+            seen.add(ch)
+            result+=ch
+    return result 
+print(remove_duplicates("Garvv SshaArma"))
 
 
 
