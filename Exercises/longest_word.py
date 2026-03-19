@@ -37,3 +37,42 @@ def longest_substring(s):
     return max_sub_string,max_length
 print(longest_word("ajfbda th ysd lads nadsjgnajgbdsgbdsal"))
 
+# General Solution
+def long_word(s):
+    word_lst=[]
+    empty_dct={}
+    for item in s.split():
+        empty_dct[item]=len(item)
+    longest_length=0
+    longest_word=None
+    for word,length in empty_dct.items():
+        if length>longest_length:
+            longest_length=length
+            longest_word=word
+    return longest_word,longest_length
+print(long_word("The writer wants to write"))
+
+# Withou using split():
+
+def long_est_word(s):
+    longest=""
+    max_len=0
+    current=""
+    for ch in s:
+        if ch!=" ":
+            current+=ch
+        else:
+            if len(current)>max_len:
+                max_len=len(current)
+                longest=current
+            current=""           # reset current for next word
+            
+         # Checking the Last word   because it does not end with space thus will not enter into else block    
+
+    if len(current)>max_len:
+        longest=current
+        max_len=len(current)
+    return longest,max_len
+
+
+
