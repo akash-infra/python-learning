@@ -65,6 +65,9 @@ print(x) ; print(y) ; print("This is multiple statemenets in one line writen") #
 #if you want to print multiple words in a single line you can use end parameter of print function.
 print("Hello world!", end=" ") ; print("Welcome to Python programming.")
 print("Akash", end=" ")
+# by default end is the "NEW LINE"
 print("is learning Python.")
+
+
 
 
